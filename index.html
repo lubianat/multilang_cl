@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual Cell Ontology</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .jumbotron {
+      background-color: #e9ecef;
+      border-radius: 0.3rem;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    .logo {
+      width: 133px;
+      margin-bottom: 20px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron mt-4 text-center">
+      <img src="https://user-images.githubusercontent.com/112839/107354015-9375bb00-6ac5-11eb-9394-7318df343ec2.png"
+        alt="CL Logo" class="logo">
+      <h1 class="display-4">Multilingual Cell Ontology</h1>
+      <p class="lead">This project adds multilingual labels to the Cell Ontology using data from Wikidata.</p>
+      <hr class="my-4">
+      <p>The labels are fetched from Wikidata and incorporated into the Cell Ontology (CL). The updated ontology file
+        can be downloaded below.</p>
+      <a class="btn btn-primary btn-lg" href="data/cl-multilingual.owl" download>Download Multilingual Ontology</a>
+    </div>
+    <div class="card mt-4">
+      <div class="card-body">
+        <h5 class="card-title">Project Details</h5>
+        <p class="card-text">This project uses SPARQL queries to fetch labels from Wikidata for multiple languages and
+          integrates these labels into the Cell Ontology. The languages included are French, Spanish, German,
+          Portuguese, Italian, Arabic, Greek, Russian, Japanese, and Chinese. Only labels available in the Wikidata
+          platform are retrieved, thus coverage is often incomplete.</p>
+        <a href="https://github.com/lubianat/multilang_cl" class="btn btn-secondary" target="_blank">GitHub
+          Repository</a>
+        <a href="https://cell-ontology.github.io/" class="btn btn-secondary" target="_blank">Cell Ontology</a>
+        <a href="https://www.wikidata.org/" class="btn btn-secondary" target="_blank">Wikidata</a>
+      </div>
+    </div>
+    <div class="footer text-center">
+      <p>Integration with Wikidata was done with the support of FAPESP grant #19/26284-1. For more details, visit the <a
+          href="https://bv.fapesp.br/en/bolsas/193825/building-a-biological-knowledge-graph-via-wikidata-with-a-focus-on-the-human-cell-atlas/">project
+          page</a>.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Add any JavaScript functionality here if needed
+  </script>
+</body>
+
+</html>

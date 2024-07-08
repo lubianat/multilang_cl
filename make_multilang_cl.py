@@ -39,7 +39,7 @@ def update_ontology_labels(file_path, label_data):
         ontology_uri = URIRef(ontology_id)
         wikidata_uri = URIRef(data["wikidata_uri"])
 
-        if ontology_uri, RDFS.label, None) in graph:
+        if (ontology_uri, RDFS.label, None) in graph:
             for lang, label in data["labels"].items():
                 label_literal = Literal(label, lang=lang)
                 graph.add((ontology_uri, RDFS.label, label_literal))
@@ -76,7 +76,7 @@ def update_ontology_labels(file_path, label_data):
         else:
             print(f"No existing RDFS.label for {ontology_uri}")
 
-    graph.serialize(destination="static/cl-multilingual.owl", format="xml")
+    graph.serialize(destination="data/cl-multilingual.owl", format="xml")
 
 
 def download_ontology(ontology_name):
